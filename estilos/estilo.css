@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E7EDED;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --anchoBotonCorazon: 3.5rem;
+}
+
+
+.imgCubiertos:hover {
+    transform: scaley(0.98) scaleX(0.98);
+}
+
+.containerFotosIcono:hover {
+    background-color: #969797;
+}
+
+.containerTitulo i:hover {
+    color: #FFFFFF;
+    background-color: #0087FF;
+    border-radius: 25%;
+}
+
+.comprar button:hover {
+    background-color: #0088ffbb;
+    transform: scaleX(1.02)
+                scaleY(1.02);
+}
+
+.botonDescarga:hover,
+.botonCorazon:hover{
+    border-color: #0087FF;
+    color: #0087FF;
+}
+
+.card {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background-color: #FEFFFF;
+    width: 25rem;
+    overflow: hidden;
+}
+
+.containerImg {
+    position: relative;
+    height: 50vh;
+}
+
+.imgCubiertos {
+    background-image: url(cubiertos.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.containerFotosIcono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    height: 1.7rem;
+    width: 2.8rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: #FFFFFF;
+    background-color: #c6c7c7;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.containerFotosIcono i {
+    font-size: 1rem;
+}
+
+.containerTitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divTitulo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.1rem 0 1rem 0;
+}
+
+.divTitulo h2 {
+    color: #4E636A;
+    font-size: 1.2rem;
+}
+
+.divTitulo p {
+    color: #4E636A;
+}
+
+.containerTitulo i {
+    color: #0087FF;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.containerCompra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.comprar button {
+    background-color: #0087FF;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.botonCorazon,
+.botonDescarga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: var(--anchoBotonCorazon);
+    border: 0.1px solid #4e636a33;
+    border-radius: 0.5rem;
+    color: #4E636A;
+    outline: none;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.botonDescarga {
+    width: calc(1.5 * var(--anchoBotonCorazon));
+}
